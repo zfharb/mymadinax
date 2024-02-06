@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import axios from "axios";
 
-import "./Signin.css"
-
 function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -40,7 +38,7 @@ function Login() {
 
     return (
         <>  
-            <div class="container d-flex min-vw-100 justify-content-center align-items-center">
+            <div class="container d-flex  position-absolute top-50 start-50 translate-middle justify-content-center">
                 <form class="border border-dark w-50 p-3 form-bg">
                             <div class="mb-3">
                             <input type="username" class="form-control bg-light bg-gradient"  placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
