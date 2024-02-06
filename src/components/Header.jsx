@@ -21,13 +21,13 @@ function Header() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Singin</a>
+                  <a class="nav-link" href="/Signin">Singin</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Sing up</a>
+                  <a class="nav-link" href="/Signup">Sing up</a>
                 </li>
               </ul>
              

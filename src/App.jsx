@@ -1,8 +1,7 @@
 import Home from './components/Home.jsx'
-import Login from './components/Login.jsx'
-import Register from './components/Register.jsx'
+import Signin from './components/Signin.jsx'
+import Signup from './components/Signup.jsx'
 import NotFound from './components/NotFound.jsx'
-import Header from './components/Header.jsx'
 
 import {Route, Routes} from "react-router-dom"
 
@@ -14,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<><Home/></>}/>
         <Route path="/Home" element={<Home/>}/>
-        <Route path="/login" element={<Login/>}/>
-        <Route path="/register" element={<Register/>}/>
+        <Route path="/Signin" element={<Signin/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>   
 

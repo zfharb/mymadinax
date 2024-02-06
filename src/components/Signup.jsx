@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from "axios";
 
-import "./Register.css"
+import "./Signup.css"
 
 
 function Register() {
