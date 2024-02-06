@@ -1,15 +1,21 @@
+import goldCoast from '/src/images/gold-coast.jpeg'
+
 
 function Home() {
 
   return (
     <>
       <div class="container">
-        <div class=" z-n1 w-75 h-75 position-absolute top-50 start-50 translate-middle"
-              style={{  
-                      backgroundImage: "url('src/images/gold-coast.jpeg')",
-                      backgroundSize: 'cover',
-                      backgroundRepeat: 'no-repeat'
-                    }}/>
+        <div class=" z-n1 w-75 h-75 position-absolute top-50 start-50 translate-middle">
+          <img class="w-100 h-100 position-absolute"
+                src={goldCoast} 
+                style={{  
+                  backgroundImage: goldCoast,
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat'
+                }}
+                 alt="...."/>
+        </div>
         
         <div class=" z-0 bg-info-subtle opacity-50 w-75 h-75 position-absolute top-50 start-50 translate-middle">
         
