@@ -1,6 +1,5 @@
 import goldCoast from '/src/images/gold-coast.jpeg'
 
-
 function Home() {
 
   return (
@@ -10,7 +9,6 @@ function Home() {
           <img class="w-100 h-100 position-absolute"
                 src={goldCoast} 
                 style={{  
-                  backgroundImage: goldCoast,
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat'
                 }}
