@@ -10,7 +10,8 @@ function Home() {
       
       <div class="mask text-light d-flex justify-content-center flex-column text-center" 
             style={{  
-              backgroundColor: 'rgba(0, 0, 0, .5)',
+              backgroundColor: '#09a2ffd9',
+              opacity: '.8'
             }}>
         <h4>Persian Business Directory</h4>
         <div class="text-center">
