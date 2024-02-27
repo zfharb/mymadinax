@@ -1,6 +1,7 @@
 import Home from './components/Home.jsx'
 import Signin from './components/Signin.jsx'
 import Signup from './components/Signup.jsx'
+import AboutUs from './components/AboutUs.jsx'
 import NotFound from './components/NotFound.jsx'
 
 import {Route, Routes} from "react-router-dom"
@@ -14,6 +15,7 @@ function App() {
           <Route path="/Home" element={<Home/>}/>
           <Route path="/Signin" element={<Signin/>}/>
           <Route path="/Signup" element={<Signup/>}/>
+          <Route path="/AboutUs" element={<AboutUs/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>  
       </div> 

@@ -13,7 +13,7 @@ function Header() {
                   <a class="nav-link active" aria-current="page" href="/home">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/">ABOUT US</a>
+                  <a class="nav-link" href="/aboutus">ABOUT US</a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="/Signup">SIGN IN/ SIGN UP</a>

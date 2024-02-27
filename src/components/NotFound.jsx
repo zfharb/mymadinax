@@ -1,6 +1,6 @@
 
 
-function NotFound(props) {
+function NotFound() {
    
     return (
         <>
