@@ -3,9 +3,9 @@ import axios from "axios";
 
 function Register() {
     const [name, setName] = useState('')
+    const [subject, setSubject] = useState('')
     const [email, setEmail] = useState('')
-    const [username, setUsername] = useState('')
-    const [password, setPassword] = useState('')
+    const [message, setMessage] = useState('')
 
     const registerUser = async (event) => {
         console.log("register event--------")
@@ -19,27 +19,27 @@ function Register() {
                 "https://usycq00pk7.execute-api.us-east-1.amazonaws.com/dev/register",
                 {
                         name:name,
+                        subject:subject,
                         email:email,
-                        username:username,
-                        password:password
+                        message:message
                 }
         )
         .then((response) => {
                 console.log("Successfully registered user!")
                 console.log(response);
                 setName('')
+                setSubject('')
                 setEmail('')
-                setUsername('')
-                setPassword('')
+                setMessage('')
 
         })
         .catch((error) => {
                 console.log("Something went wrong!")
                 console.log(error);
                 setName('')
+                setSubject('')
                 setEmail('')
-                setUsername('')
-                setPassword('')
+                setMessage('')
         });
 
     }
@@ -47,23 +47,53 @@ function Register() {
     return (
         // class="position-absolute top-50 start-50 translate-middle"
         <>  
-        <div class="container d-flex  position-absolute top-50 start-50 translate-middle justify-content-center">
-            <form class="border border-dark w-50 p-3 form-bg">
-                <div class="mb-3">
-                <input type="username" class="form-control bg-light bg-gradient"  placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
+        <div class="bg-image vh-100 d-flex  justify-content-center"
+        
+        style={{  
+            backgroundColor: 'WhiteSmoke',
+
+            // opacity: '.2'
+          }}>
+            <div class="container text-center">
+
+                <div class="row justify-content-center m-5">
+                        <h2 class="text-info">Contact Us</h2>
+
+                        <div class="col-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                        </div>
                 </div>
-                <div class="mb-3">
-                <input type="password" class="form-control bg-light bg-gradient" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
-                </div>
-                <div class="mb-3">
-                <input type="password" class="form-control bg-light bg-gradient" placeholder="Retype password" value={password} onChange={e => setPassword(e.target.value)} />
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="submit" class="btn btn-primary" onClick={registerUser}>Sing in</button>
-                        <button type="submit" class="btn btn-primary" onClick={registerUser}>Sing in with facebook</button>
-                        <p class="text-center"><a class="link-dark link-opacity-75" href="#">forgot your email or password ?</a></p>
-                </div>
-            </form>
+
+           
+            <div class="row justify-content-center" >
+            <div class="col-sm-4 bg-white border border-0 border-top border-info">
+                <form class="p-0">
+                    <div class="px-5 my-3">
+                    <label for="name" class="float-start form-label pt-3">Name</label>
+                    <input class="form-control" id="name" value={name} onChange={e => setName(e.target.value)} />
+                    </div>
+                    <div class="px-5 my-3">
+                    <label for="subject" class="float-start form-label">Subject</label>
+                    <input class="form-control" id="subject" value={subject} onChange={e => setSubject(e.target.value)} />
+                    </div>
+                    <div class="px-5 my-3">
+                    <label for="email" class="float-start form-label">Email</label>
+                    <input class="form-control" id="email" value={email} onChange={e => setEmail(e.target.value)} />
+                    </div>
+                    <div class="px-5 my-3">
+                    <label for="message" class="float-start form-label">Message</label>
+                    <textarea class="form-control input-lg" id="message" value={message} onChange={e => setMessage(e.target.value)} />
+                    </div>
+                  
+                    <div class="float-start px-5 my-3">
+                            <button type="submit" class="btn btn-primary" onClick={registerUser}>Send</button>
+                    </div>
+                </form>
+            </div>
+
+            </div>
+            </div>
+
         </div>
     </>
     )
