@@ -45,14 +45,11 @@ function Register() {
     }
 
     return (
-        // class="position-absolute top-50 start-50 translate-middle"
         <>  
-        <div class="bg-image vh-100 d-flex  justify-content-center"
+        <div class="bg-image"
         
         style={{  
             backgroundColor: 'WhiteSmoke',
-
-            // opacity: '.2'
           }}>
             <div class="container text-center">
 
@@ -65,35 +62,36 @@ function Register() {
                 </div>
 
            
-            <div class="row justify-content-center" >
-            <div class="col-sm-4 bg-white border border-0 border-top border-info">
-                <form class="p-0">
-                    <div class="px-5 my-3">
-                    <label for="name" class="float-start form-label pt-3">Name</label>
-                    <input class="form-control" id="name" value={name} onChange={e => setName(e.target.value)} />
+                <div class="row justify-content-center" >
+                    <div class="col-sm-4 bg-white border border-0 border-top border-info">
+                        <form class="p-0">
+                            <div class="px-5 my-3">
+                            <label for="name" class="float-start form-label pt-3">Name</label>
+                            <input class="form-control" id="name" value={name} onChange={e => setName(e.target.value)} />
+                            </div>
+                            <div class="px-5 my-3">
+                            <label for="subject" class="float-start form-label">Subject</label>
+                            <input class="form-control" id="subject" value={subject} onChange={e => setSubject(e.target.value)} />
+                            </div>
+                            <div class="px-5 my-3">
+                            <label for="email" class="float-start form-label">Email</label>
+                            <input class="form-control" id="email" value={email} onChange={e => setEmail(e.target.value)} />
+                            </div>
+                            <div class="px-5 my-3">
+                            <label for="message" class="float-start form-label">Message</label>
+                            <textarea class="form-control input-lg" id="message" value={message} onChange={e => setMessage(e.target.value)} />
+                            </div>
+                        
+                            <div class="float-start px-5 my-3">
+                                    <button type="submit" class="btn btn-primary" onClick={registerUser}>Send</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="px-5 my-3">
-                    <label for="subject" class="float-start form-label">Subject</label>
-                    <input class="form-control" id="subject" value={subject} onChange={e => setSubject(e.target.value)} />
-                    </div>
-                    <div class="px-5 my-3">
-                    <label for="email" class="float-start form-label">Email</label>
-                    <input class="form-control" id="email" value={email} onChange={e => setEmail(e.target.value)} />
-                    </div>
-                    <div class="px-5 my-3">
-                    <label for="message" class="float-start form-label">Message</label>
-                    <textarea class="form-control input-lg" id="message" value={message} onChange={e => setMessage(e.target.value)} />
-                    </div>
-                  
-                    <div class="float-start px-5 my-3">
-                            <button type="submit" class="btn btn-primary" onClick={registerUser}>Send</button>
-                    </div>
-                </form>
+                </div>
+                <div class="row justify-content-center my-3" >
+                        <h5>Already have an account ?  <a class="link-opacity-100" href="/signin">Login</a></h5>
+                </div>
             </div>
-
-            </div>
-            </div>
-
         </div>
     </>
     )
