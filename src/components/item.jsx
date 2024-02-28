@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-function Item() {
+function Item({summary, discreption}) {
    
 
     return (
@@ -27,7 +27,7 @@ function Item() {
                             </div>
 
                             <div class="col-md-6 col-lg-6 col-xl-6">
-                            <h5>Quant trident shirts</h5>
+                            <h5>{summary}</h5>
                             <i className="fa fa-star text-warning"></i>
                             <i className="fa fa-star text-warning"></i>
                             <i className="fa fa-star text-warning"></i>
@@ -46,9 +46,7 @@ function Item() {
                             </div> */}
                             
                             <p class="text-truncate mb-4 mb-md-0">
-                            There are many variations of passages of Lorem Ipsum available, but the
-                            majority have suffered alteration in some form, by injected humour, or
-                            randomised words which don't look even slightly believable.
+                            {discreption}
                             </p>
                             </div> 
 
