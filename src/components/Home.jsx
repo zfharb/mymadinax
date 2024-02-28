@@ -1,6 +1,24 @@
 import nyc from '/src/images/nyc-street.jpeg'
+import Item from './item.jsx'
+
+import { useState, useEffect} from 'react'
 
 function Home() {
+  const [navLink, setNaveLink] = useState('');
+  // const [navLinkActive, setNavLinkActive] = useState('');
+  
+  useEffect(() => {
+    const navLinkEls = document.querySelectorAll('.nav-link')
+    navLinkEls.forEach(navLinkEl => {
+      navLinkEl.addEventListener('click', () => {
+        document.querySelector('.active')?.classList.remove('active');
+        navLinkEl.classList.add('active')
+        // setNavLinkActive('active');
+      }
+    );
+   
+    })
+  }, [navLink])
 
   return (
     <>
@@ -15,7 +33,8 @@ function Home() {
             }}>
         <h4>Persian Business Directory</h4>
         <div class="text-center">
-        <button  class="btn btn-outline-white" >
+        <button  class='btn btn-outline-white nav-link' onClick={() => setNaveLink('home')}>
+        {navLink}
           Learn More
         </button>
       </div>
@@ -46,6 +65,7 @@ function Home() {
             </div>
           </div>
     </div>
+    <Item/>
   </>
   )
 }
