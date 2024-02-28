@@ -4,22 +4,6 @@ import Item from './item.jsx'
 import { useState, useEffect} from 'react'
 
 function Home() {
-  const [navLink, setNaveLink] = useState('');
-  // const [navLinkActive, setNavLinkActive] = useState('');
-  
-  useEffect(() => {
-    const navLinkEls = document.querySelectorAll('.nav-link')
-    navLinkEls.forEach(navLinkEl => {
-      navLinkEl.addEventListener('click', () => {
-        document.querySelector('.active')?.classList.remove('active');
-        navLinkEl.classList.add('active')
-        // setNavLinkActive('active');
-      }
-    );
-   
-    })
-  }, [navLink])
-
   return (
     <>
     
@@ -31,13 +15,10 @@ function Home() {
               backgroundColor: '#09a2ffd9',
               opacity: '.8'
             }}>
-        <h4>Persian Business Directory</h4>
+        <h4>Business Directory</h4>
         <div class="text-center">
-        <button  class='btn btn-outline-white nav-link' onClick={() => setNaveLink('home')}>
-        {navLink}
-          Learn More
-        </button>
-      </div>
+          <button type="button" class="btn btn-outline-white ">Learn More</button>
+        </div>
       </div>
     </div>
 

@@ -20,7 +20,7 @@ function Header() {
   return (
       <>
 
-        <nav class="navbar  navbar-expand-lg navbar-light bg-body">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body">
           <div class="container-fluid">
           <a class="navbar-brand" href="#">MadinaX{navLink}</a>
             <div class="collapse navbar-collapse">
