@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react'
+import { NavLink } from "react-router-dom";
 
 
 function Header() {
@@ -22,17 +23,37 @@ function Header() {
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-body">
           <div class="container-fluid">
-          <a class="navbar-brand" href="#">MadinaX{navLink}</a>
+          <a class="navbar-brand" href="#">MadinaX</a>
             <div class="collapse navbar-collapse">
+           
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link" onClick={() => setNaveLink('home')} href="/home">HOME</a>
+                  <NavLink  style={({ isActive }) => {
+                              return isActive ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
+                            }}
+                            class="text-dark " 
+                            onClick={() => setNaveLink('home')} 
+                            to="/home">HOME</NavLink>
                 </li>
+                &nbsp;
+                &nbsp;
                 <li class="nav-item">
-                  <a class="nav-link" onClick={() => setNaveLink('aboutus')} href="/aboutus">ABOUT US</a>
+                  <NavLink  style={({ isActive }) => {
+                              return isActive ? { color: "black", fontWeight: "bold" } : {color: 'black'};
+                            }}
+                            class="nav-link text-dark  active" 
+                            onClick={() => setNaveLink('aboutus')} 
+                            to="/aboutus">ABOUT US</NavLink>
                 </li>
+                &nbsp;
+                &nbsp;
                 <li class="nav-item ">
-                  <a class="nav-link" onClick={() => setNaveLink('Signup')} href="/Signup">SIGN IN/ SIGN UP</a>
+                  <NavLink  style={({ isActive }) => {
+                              return isActive ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
+                            }}
+                            class="nav-link text-dark active " 
+                            onClick={() => setNaveLink('Signup')} 
+                            to="/Signup">SIGN IN/ SIGN UP</NavLink>
                 </li>
               </ul>
             
