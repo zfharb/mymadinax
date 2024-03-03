@@ -9,8 +9,10 @@ function Item({summary, discreption}) {
 
         <>
         <div class="container">
-            <div class="row">
-                <div class="card border-dark mb-3 mt-3 border border-dark" >
+            <div class="row justify-content-center">
+                <div  style={{  
+                        width: '60rem'}} 
+                    class="card mb-3 mt-3 border border-secondary-subtle" >
                     <div class="card-body text-dark">
                         <div class="row">
 

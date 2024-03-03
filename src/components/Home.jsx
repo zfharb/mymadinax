@@ -44,10 +44,13 @@ function Home() {
             </div>
           </div>
     </div>
+    <div class="mt-5 mb-5">
 
-    {mockIttems.items.map((item, index) => (
-                <Item summary={item.summary} discreption={item.discreption} />
-            ))}
+      {mockIttems.items.map((item, index) => (
+        <Item summary={item.summary} discreption={item.discreption} />
+        ))
+      }
+    </div>
   </>
   )
 }
