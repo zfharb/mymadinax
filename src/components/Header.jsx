@@ -20,15 +20,15 @@ function Header() {
  
   return (
       <>
-        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-          <div class="container-fluid m-3">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary p-3">
+          <div class="container-fluid ">
           <NavLink class="navbar-brand ps-5"  style={{color: 'black'}} onClick={() => setNaveLink('')} to="/"><h3 class="ps-5">MadinaX</h3></NavLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse pe-5" id="navbarScroll">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-5">
-                        <li class="nav-item">
+                        <li class="nav-item p-3">
                           <NavLink  style={( { isActive }) => {                                      
                                       return (isActive 
                                               || window.location.pathname == '/home' 
@@ -41,17 +41,17 @@ function Header() {
                         </li>
                         &nbsp;
                         &nbsp;
-                        <li class="nav-item">
+                        <li class="nav-item p-3">
                           <NavLink  style={({ isActive }) => {
                                       return (isActive || window.location.pathname == '/aboutus') ? { color: "black", fontWeight: "bold" } : {color: 'black'};
                                     }}
-                                    class="nav-link text-dark aboutus" 
+                                    class="nav-link text-dark" 
                                     onClick={() => setNaveLink('aboutus')} 
                                     to="/aboutus">ABOUT US</NavLink>
                         </li>
                         &nbsp;
                         &nbsp;
-                        <li class="nav-item ">
+                        <li class="nav-item p-3">
                           <NavLink  style={({ isActive }) => {
                                       return (isActive || window.location.pathname == '/Signup') ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
                                     }}
