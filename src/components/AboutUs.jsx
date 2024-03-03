@@ -5,10 +5,10 @@ function AboutUs() {
     return (
         <>
             <div class="container text-center">
-                <div class="row justify-content-center mt-5">
+                <div class="row justify-content-center pt-5 mt-5">
                         <h2 class="text-info mt-5">Contact Us</h2>
 
-                        <div class="col-4">
+                        <div class="col-4 mb-5">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
                         </div>
                 </div>
