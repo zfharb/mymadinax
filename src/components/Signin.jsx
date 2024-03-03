@@ -49,7 +49,7 @@ function Login() {
                         <h2 class="text-info mt-5">Contact Us</h2>
 
                         <div class="col-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                            If you are a service provider, Signin to your account to add a service or update account informaiton.
                         </div>
                 </div>
 
