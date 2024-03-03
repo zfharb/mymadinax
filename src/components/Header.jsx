@@ -22,7 +22,7 @@ function Header() {
       <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <NavLink class="navbar-brand"  style={{color: 'black'}} onClick={() => setNaveLink('home')} to="/"><h3>MadinaX</h3></NavLink>
+            <NavLink class="navbar-brand"  style={{color: 'black'}} onClick={() => setNaveLink('')} to="/"><h3>MadinaX</h3></NavLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,7 +30,7 @@ function Header() {
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                         <li class="nav-item">
                           <NavLink  style={({ isActive }) => {
-                                      return (isActive || navLink=="home") ? { color: "black", fontWeight: "bold" } : {color: 'black'};
+                                      return (isActive || navLink=="") ? { color: "black", fontWeight: "bold" } : {color: 'black'};
                                     }}
                                     class="text-dark" 
                                     onClick={() => setNaveLink('home')} 
