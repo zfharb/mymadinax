@@ -39,7 +39,7 @@ function Home() {
                           <option value="14">House Services</option>
                       </optgroup>
                   </select></div>
-              <div class="col-sm-2"><input class="form-control input-lg h-100" type="text" value="Zipcode" /></div>
+              <div class="col-sm-2"><input class="form-control input-lg h-100" type="text" placeholder="Zip Code" /></div>
               <div class="col-sm-2"><input class="btn btn-primary btn-lg w-100" type="submit" value="Search" /></div>
             </div>
           </div>
