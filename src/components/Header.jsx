@@ -20,7 +20,7 @@ function Header() {
  
   return (
       <>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
           <div class="container-fluid">
             <NavLink class="navbar-brand"  style={{color: 'black'}} onClick={() => setNaveLink('')} to="/"><h3>MadinaX</h3></NavLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">

@@ -5,14 +5,14 @@ function AboutUs() {
     return (
         <>
             <div class="container text-center">
-                <div class="row justify-content-center m-5">
-                        <h2 class="text-info">Contact Us</h2>
+                <div class="row justify-content-center mt-5">
+                        <h2 class="text-info mt-5">Contact Us</h2>
 
                         <div class="col-4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
                         </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mb-5">
                     <div class="col-sm-6 col-lg-4">
                         <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="/src/images/gold-coast.jpeg"/>
                             <div class="card-body info">
