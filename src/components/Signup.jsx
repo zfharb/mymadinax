@@ -57,7 +57,7 @@ function Register() {
                         <h2 class="text-info pt-5 mt-5">Contact Us</h2>
 
                         <div class="col-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
+                            For any inquiry, you can send us a message and we'll get back to you shortly.
                         </div>
                 </div>
 
