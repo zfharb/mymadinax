@@ -9,8 +9,8 @@ function Item({summary, discreption}) {
 
         <>
         <div class="container">
-            <div class="row mb-3">
-                <div class="card border-dark mb-5 mt-5 border border-dark" >
+            <div class="row">
+                <div class="card border-dark mb-3 mt-3 border border-dark" >
                     <div class="card-body text-dark">
                         <div class="row">
 
