@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
 
-  const [navLink, setNaveLink] = useState('');
+  const [navLink, setNaveLink] = useState('home');
   
   useEffect(() => {
     const navLinkEls = document.querySelectorAll('.nav-link')
@@ -22,7 +22,7 @@ function Header() {
       <>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#"><h3>MadinaX</h3></a>
+            <a class="navbar-brand" href="#"><h3>MadinaX{navLink}</h3></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -30,9 +30,9 @@ function Header() {
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                         <li class="nav-item">
                           <NavLink  style={({ isActive }) => {
-                                      return isActive ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
+                                      return (isActive || navLink=="home") ? { color: "black", fontWeight: "bold" } : {color: 'black'};
                                     }}
-                                    class="text-dark " 
+                                    class="text-dark" 
                                     onClick={() => setNaveLink('home')} 
                                     to="/home">HOME</NavLink>
                         </li>
