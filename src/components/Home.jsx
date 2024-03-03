@@ -2,13 +2,9 @@ import nyc from '/src/images/nyc-street.jpeg'
 import Item from './item.jsx'
 import * as mockIttems from '../mock/mockItems.json'
 
-import { useState, useEffect} from 'react'
-
 function Home() {
   return (
-    <>
-    {JSON.stringify(mockIttems.items)}
-    
+    <>    
     <div class="bg-image mb-5" >
       <img src={nyc} class="w-100" />
       
@@ -51,13 +47,7 @@ function Home() {
 
     {mockIttems.items.map((item, index) => (
                 <Item summary={item.summary} discreption={item.discreption} />
-
-                // <div key={index}>
-                //     <span>{item.summary}</span>
-                //     <span>{item.discreption}</span>
-                // </div>
             ))}
-    {/* <Item/> */}
   </>
   )
 }

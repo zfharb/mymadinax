@@ -11,30 +11,30 @@ function Footer() {
                     <div class="col-sm-3 mt-3">
                         <h5>Get started</h5>
                         <ul>
-                            <li><a class="link-light" href="#">Home</a></li>
-                            <li><a class="link-light" href="#">Sign up</a></li>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}><a class="link-light h5" href="#"> Home</a></li><br/>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}> <a class="link-light h5" href="#">  Sign up</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 mt-3">
                         <h5>About us</h5>
                         <ul>
-                            <li><a class="link-light" href="#">Company Information</a></li>
-                            <li><a class="link-light" href="#">Contact us</a></li>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}><a class="link-light h5" href="#"> Company Information</a></li><br/>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}> <a class="link-light h5" href="#">  Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 mt-3">
                         <h5>Support</h5>
                         <ul>
-                            <li><a class="link-light" href="#">FAQ</a></li>
-                            <li><a class="link-light" href="#">Help desk</a></li>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}><a class="link-light h5" href="#"> FAQ</a></li><br/>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}> <a class="link-light h5" href="#">  Help desk</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 mt-3">
                         <h5>Legal</h5>
                         <ul>
-                            <li><a class="link-light" href="#">Terms of Service</a></li>
-                            <li><a class="link-light" href="#">Terms of Use</a></li>
-                            <li><a class="link-light" href="#">Privacy Policy</a></li>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}><a class="link-light h5" href="#"> Terms of Service</a></li><br/>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}> <a class="link-light h5" href="#">  Terms of Use</a></li><br/>
+                            <li class="fa fa-angle-right" style={{color: '#0096FF'}}> <a class="link-light h5" href="#">  Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
