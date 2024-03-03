@@ -1,12 +1,12 @@
 {
     "items": [
       {
-        "summary": "pant",
-        "discreption": "Awesome pant"
+        "summary": "item 1",
+        "discreption": "shirt and shoes"
       },
       {
-        "summary": "shirt",
-        "discreption": "Awesome shirt"
+        "summary": "item 2",
+        "discreption": "shirt and shoes"
       }
     ]
   }

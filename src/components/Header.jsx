@@ -9,7 +9,7 @@ function Header() {
   useEffect(() => {
     const navLinkEls = document.querySelectorAll('.nav-link')
     navLinkEls.forEach(navLinkEl => {
-      navLinkEl.addEventListener('click', () => {
+      navLinkEl.addEventListener('load', () => {
         document.querySelector('.active')?.classList.remove('active');
         navLinkEl.classList.add('active')
       }
@@ -29,10 +29,13 @@ function Header() {
             <div class="collapse navbar-collapse" id="navbarScroll">
               <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                         <li class="nav-item">
-                          <NavLink  style={({ isActive }) => {
-                                      return (isActive || navLink=="") ? { color: "black", fontWeight: "bold" } : {color: 'black'};
+                          <NavLink  style={( { isActive }) => {                                      
+                                      return (isActive 
+                                              || window.location.pathname == '/home' 
+                                              || window.location.pathname == '/') ? 
+                                              { color: "black", fontWeight: "bold" } : {color: 'black'};
                                     }}
-                                    class="text-dark" 
+                                    class="nav-link text-dark home" 
                                     onClick={() => setNaveLink('home')} 
                                     to="/home">HOME</NavLink>
                         </li>
@@ -40,9 +43,9 @@ function Header() {
                         &nbsp;
                         <li class="nav-item">
                           <NavLink  style={({ isActive }) => {
-                                      return isActive ? { color: "black", fontWeight: "bold" } : {color: 'black'};
+                                      return (isActive || window.location.pathname == '/aboutus') ? { color: "black", fontWeight: "bold" } : {color: 'black'};
                                     }}
-                                    class="nav-link text-dark  active" 
+                                    class="nav-link text-dark aboutus" 
                                     onClick={() => setNaveLink('aboutus')} 
                                     to="/aboutus">ABOUT US</NavLink>
                         </li>
@@ -50,9 +53,9 @@ function Header() {
                         &nbsp;
                         <li class="nav-item ">
                           <NavLink  style={({ isActive }) => {
-                                      return isActive ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
+                                      return (isActive || window.location.pathname == '/Signup') ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
                                     }}
-                                    class="nav-link text-dark active " 
+                                    class="nav-link text-dark" 
                                     onClick={() => setNaveLink('Signup')} 
                                     to="/Signup">SIGN IN/ SIGN UP</NavLink>
                         </li>
