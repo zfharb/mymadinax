@@ -46,7 +46,7 @@ function Register() {
 
     return (
         <>  
-        <div class="bg-image"
+        <div class="bg-image pb-5"
         
         style={{  
             backgroundColor: 'WhiteSmoke',
@@ -54,7 +54,7 @@ function Register() {
             <div class="container text-center">
 
                 <div class="row justify-content-center m-5">
-                        <h2 class="text-info mt-5">Contact Us</h2>
+                        <h2 class="text-info pt-5 mt-5">Contact Us</h2>
 
                         <div class="col-4">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.
@@ -88,7 +88,7 @@ function Register() {
                         </form>
                     </div>
                 </div>
-                <div class="row justify-content-center my-3" >
+                <div class="row justify-content-center mb-5 my-3" >
                         <h5>Already have an account ?  <a class="link-opacity-100" href="/signin">Login</a></h5>
                 </div>
             </div>
