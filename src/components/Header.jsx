@@ -53,11 +53,14 @@ function Header() {
                         &nbsp;
                         <li class="nav-item p-3">
                           <NavLink  style={({ isActive }) => {
-                                      return (isActive || window.location.pathname == '/Signup') ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
+                                      return (isActive || 
+                                              window.location.pathname == '/signup' || 
+                                              window.location.pathname == '/signin') 
+                                              ? { color: "black", fontWeight: "bold"  } : {color: 'black'};
                                     }}
                                     class="nav-link text-dark" 
-                                    onClick={() => setNaveLink('Signup')} 
-                                    to="/Signup">SIGN IN/ SIGN UP</NavLink>
+                                    onClick={() => setNaveLink('signup')} 
+                                    to="/signup">SIGN IN/ SIGN UP</NavLink>
                         </li>
                       </ul>
               </div>
