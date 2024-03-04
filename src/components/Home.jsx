@@ -8,14 +8,14 @@ function Home() {
     <div class="bg-image mb-5" >
       <img src={nyc} class="w-100" />
       
-      <div class="mask text-light d-flex justify-content-center flex-column text-center" 
+      <div class="mask text-white d-flex justify-content-center flex-column text-center" 
             style={{  
               backgroundColor: '#09a2ffd9',
-              opacity: '.8'
+              opacity: '1'
             }}>
-        <h4>Business Directory</h4>
-        <div class="text-center">
-          <button type="button" class="btn btn-outline-white ">Learn More</button>
+        <h2>Business Directory</h2>
+        <div class="text-center mt-3">
+          <button type="button" class="btn btn-outline-light btn-lg">Learn More</button>
         </div>
       </div>
     </div>
