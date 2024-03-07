@@ -7,15 +7,21 @@ function Header() {
   const [navLink, setNaveLink] = useState('');
   
   useEffect(() => {
-    const navLinkEls = document.querySelectorAll('.nav-link')
-    navLinkEls.forEach(navLinkEl => {
-      navLinkEl.addEventListener('load', () => {
-        document.querySelector('.active')?.classList.remove('active');
-        navLinkEl.classList.add('active')
-      }
-    );
-   
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navbarScroll')
+    const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+    navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
     })
+    // const navLinkEls = document.querySelectorAll('.nav-link')
+    // navLinkEls.forEach(navLinkEl => {
+    //   navLinkEl.addEventListener('load', () => {
+    //     document.querySelector('.active')?.classList.remove('active');
+    //     navLinkEl.classList.add('active')
+    //   }
+    // );
+   
+    // })
   }, [navLink])
  
   return (
