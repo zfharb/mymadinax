@@ -23,12 +23,24 @@ function Header() {
    
     // })
   }, [navLink])
+
+  useEffect(() => {
+    
+    const navLinkBrands = document.querySelectorAll('.navbar-brand')
+    navLinkBrands.forEach(navLinkBrand => {
+      navLinkBrand.addEventListener('click', () => {
+        document.querySelector('.navbar-collapse')?.classList.remove('show');
+      }
+    );
+   
+    })
+  }, [navLink])
  
   return (
       <>
         <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary p-3">
           <div class="container-fluid pt-5">
-          <NavLink class="navbar-brand ps-5"  style={{color: 'black'}} onClick={() => setNaveLink('')} to="/"><h3 class="ps-5">MadinaX</h3></NavLink>
+          <NavLink class="navbar-brand ps-5" style={{color: 'black'}} onClick={() => setNaveLink('')} to="/"><h1 class="ps-5 navbar-brand">MadinaX</h1></NavLink>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
